@@ -1,5 +1,5 @@
 {
-  "name": "JATE_textED",
+  "name": "jate_texted",
   "version": "1.0.0",
   "description": "JATE_textED is a text editor that runs in the browser.",
   "main": "server.js",
