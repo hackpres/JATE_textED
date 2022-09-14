@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
@@ -24,7 +23,6 @@ module.exports = () => {
         template: './index.html',
         title: 'Webpack Plugin'
       }),
-      new MiniCssExtractPlugin(),
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
@@ -47,26 +45,13 @@ module.exports = () => {
           },
         ],
       }),
-      new WorkboxPlugin.GenerateSW({
-        exclude: [/\.(?:png|jpg|jpeg|svg)$/],
-        runtimeCaching: [{
-          urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
-          handler: 'CacheFirst',
-          options: {
-            cacheName: 'JATE images',
-            expiration: {
-              maxEntries: 1,
-            }
-          }
-        }]
-      })
     ],
 
     module: {
       rules: [
         {
           test: /\.css$/i,
-          use: [MiniCssExtractPlugin.loader, 'css-loader'],
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
