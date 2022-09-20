@@ -18,9 +18,8 @@ export const putDb = async (content) => {
     const jateDb = await openDB('jate', 1);
     const transaction = jateDb.transaction('jate', 'readwrite');
     const store = transaction.objectStore('jate');
-    const request = store.put({ id: 1, value: content });
 
-    const result = await request;
+    const result = await store.put({ id: 1, value: content });
     console.log('Data successfully saved to database', result);
   }
   catch {
@@ -34,8 +33,7 @@ export const getDb = async () => {
     const jateDb = await openDB('jate', 1);
     const transaction = jateDb.transaction('jate', 'readonly');
     const store = transaction.objectStore('jate');
-    const request = store.getAll();
-    const result = await request;
+    const result = await store.getAll();
     result
       ? console.log('Successfully retrieved data from database', result)
       : console.log('No data found');
