@@ -2,14 +2,14 @@
 # JATE_textED.
 
 ![license badge](https://img.shields.io/badge/license-isc-brightgreen)
-<img src="./assets/img/jateTitle.png" width="800"/><br/>
+<img src="./assets/imgs/jateTitle.png" width="800"/><br/>
 
 ## Description
 JATE_textED is a text editor that runs in the browser, and can be installed to run locally on your machine!
 
-<img src="./assets/img/manifest.png" width="800"/><br/>
-<img src="./assets/img/serviceWorker.png" width="800"/><br/>
-<img src="./assets/img/indexedDB.png" width="800"/><br/>
+<img src="./assets/imgs/manifest.png" width="800"/><br/>
+<img src="./assets/imgs/serviceWorker.png" width="800"/><br/>
+<img src="./assets/imgs/indexedDB.png" width="800"/><br/>
 
 
 ## Table of Contents
@@ -30,7 +30,7 @@ navigate to <a href="jate-texted.herokuapp.com">jate-texted.herokuapp.com</a> an
 <a name="usage"/>
 You don't really need to know much, just open the app, whether in the browser or, if installed, locally. Then type and edit your text as you please!<br/>
 
-<img src="./assets/imgs/jateExample.png" width="600"/><br/>
+<img src="./assets/imgs/jateExample.png" width="800"/><br/>
 
 
 ### License
