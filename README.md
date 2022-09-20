@@ -2,7 +2,7 @@
 # JATE_textED.
 
 ![license badge](https://img.shields.io/badge/license-isc-brightgreen)<br />
-<a href="jate-texted.herokuapp.com"><img src="./assets/imgs/jateTitle.png" width="500"/></a><br />
+<a href="https://jate-texted.herokuapp.com/"><img src="./assets/imgs/jateTitle.png" width="500"/></a><br />
 
 ## Description
 JATE_textED is a text editor that runs in the browser, and can be installed to run locally on your machine!
@@ -23,7 +23,7 @@ JATE_textED is a text editor that runs in the browser, and can be installed to r
 ### Installation
 <a name="installation"/>
 
-navigate to <a href="jate-texted.herokuapp.com">jate-texted.herokuapp.com</a> and click the install button!
+navigate to <a href="https://jate-texted.herokuapp.com/">jate-texted.herokuapp.com</a> and click the install button!
 
 
 ### Usage
